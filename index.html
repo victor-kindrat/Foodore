@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODORE - create an order</title>
+    <!-- jquerry -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- styles and favicon  -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- font1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <img src="./header/header__icon.svg" alt="icon" class="header__icon">
+                <p class="header__logo-text">Foodure</p>
+            </div>
+            <nav class="header__nav">
+                <div class="header__menu-full">
+                    <div class="header__nav-item">Home</div>
+                    <div class="header__nav-item main__name-of-dishes_orange">dishes</div>
+                    <div class="header__nav-item">contact</div>
+                    <div class="header__nav-icons">
+                        <img src="./header/header__menu.svg" alt="menu" class="header__menu-btn">
+                        <img src="./header/header__cart.svg" alt="cart" class="header__my-cart-btn">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <!-- left part  -->
+            <section class="main__left">
+                <h1 class="main__headline">Сhoose a dish:</h1>
+                <div class="main__switcher-group">
+                    <div class="main__plate-body" id="main__plate">
+                        <div class="main__plates main__plates1">
+                            <div class="main__row main__row_center">
+                                <div class="main__plate plateup main__plate1"></div>
+                            </div>
+                            <div class="main__row rotate1">
+                                <div class="main__plate plateleft main__plate2"></div>
+                                <div class="main__plate plateright main__plate3"></div>
+                            </div>
+                            <div class="main__row rotate2">
+                                <div class="main__plate plateleft main__plate4"></div>
+                                <div class="main__plate plateright main__plate5"></div>
+                            </div>
+                            <div class="main__row main__row_center">
+                                <div class="main__plate platebottom main__plate6"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="main__name-of-dishes"><span class="main__name-of-dishes_orange">Foodore </span>pizza</h2>
+                </div>
+
+            </section>
+            <!-- right part  -->
+            <section class="main__right">
+                <div class="main__card">
+                    <h2 class="main__card-headline">Ingaradients:</h2>
+                    <div class="main__card-ingradients">
+                        <!-- ingradient 1 -->
+                        <div class="main__text-row main__text-row-ingrad">
+                            <p class="main__ingradient">Name of ingradient</p>
+                            <p class="main__ingradient-gramm">100gr</p>
+                        </div>
+                        <!-- ingradient 2-->
+                        <div class="main__text-row main__text-row-ingrad">
+                            <p class="main__ingradient">Name of ingradient</p>
+                            <p class="main__ingradient-gramm">200gr</p>
+                        </div>
+                        <!-- ingradient 3-->
+                        <div class="main__text-row main__text-row-ingrad">
+                            <p class="main__ingradient">Name of ingradient</p>
+                            <p class="main__ingradient-gramm">300gr</p>
+                        </div>
+                        <!-- ingradient 4-->
+                        <div class="main__text-row main__text-row-ingrad">
+                            <p class="main__ingradient">Name of ingradient</p>
+                            <p class="main__ingradient-gramm">400gr</p>
+                        </div>
+                        <!-- ingradient 5-->
+                        <div class="main__text-row main__text-row-ingrad">
+                            <p class="main__ingradient">Name of ingradient</p>
+                            <p class="main__ingradient-gramm">500gr</p>
+                        </div>
+                    </div>
+                    <!-- price  -->
+                    <div class="main__text-row main__text-row_font-bold">
+                        <p class="main__ingradient main__ingradient_bold">Price</p>
+                        <p class="main__ingradient-gramm main__price">100$</p>
+                    </div>
+                    <div class="main__btn-box">
+                        <button type="button" class="main__card-btn" id="main__btn-previous">Previous</button>
+                        <button type="button" class="main__card-btn main__card-btn-cart"><img src="./main/main__cart.svg" alt="add-to-cart" class="main__btn-image"></button>
+                        <button type="button" class="main__card-btn" id="main__btn-next">Next</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
