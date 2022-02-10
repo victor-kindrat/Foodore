@@ -1,7 +1,22 @@
-let switcherPos = 30;
-let maxCountOfIngradients = 5;
+let switcherPos = 0;
 let switcherClicks = 1;
 let animDuration = 200;
+
+let screenWidth = $(window).width();
+let screenHeight = $(window).height();
+
+let setSwitcherPos = () => {
+    if (screenWidth <= 720) {
+        switcherPos = 120;
+    } else {
+        switcherPos = 30;
+    }
+    $('#main__plate').css('transform', 'rotate(' + switcherPos + 'deg');
+}
+setSwitcherPos();
+
+let sum = 0;
+let cart = [];
 
 let dishes = [{
     name: 'Foodore pizza',
@@ -21,7 +36,7 @@ let dishes = [{
         ingradient: 'Chicken',
         weight: '153gr'
     }],
-    price: '165$'
+    price: 165
 }, {
     name: 'Brocolli salad',
     ingradients: [{
@@ -52,7 +67,7 @@ let dishes = [{
         ingradient: 'Specias',
         weight: '15gr'
     }],
-    price: '60$'
+    price: 60
 }, {
     name: 'Rice',
     ingradients: [{
@@ -65,7 +80,7 @@ let dishes = [{
         ingradient: 'Specias',
         weight: '20gr'
     }, ],
-    price: '90$'
+    price: 90
 }, {
     name: 'Sushi set',
     ingradients: [{
@@ -87,7 +102,7 @@ let dishes = [{
         ingradient: 'Sous',
         weight: '100gr'
     }],
-    price: '190$'
+    price: 190
 }, {
     name: 'Steak',
     ingradients: [{
@@ -97,7 +112,7 @@ let dishes = [{
         ingradient: 'Specias',
         weight: '10gr'
     }, ],
-    price: '200$'
+    price: 200
 }, {
     name: 'Bean soup',
     ingradients: [{
@@ -122,7 +137,7 @@ let dishes = [{
         ingradient: 'Specias',
         weight: '20gr'
     }],
-    price: '110$'
+    price: 110
 }]
 
 // setting an ingradients
@@ -133,7 +148,7 @@ let setIngradients = (countInArray) => {
         $('.main__card-ingradients').append("<div class='main__text-row main__text-row-ingrad" + countOfThisProd + "'></div>");
         $('.main__text-row.main__text-row-ingrad' + countOfThisProd).append("<p class='main__ingradient'>" + dishes[countInArray].ingradients[i].ingradient + "</p>");
         $('.main__text-row.main__text-row-ingrad' + countOfThisProd).append("<p class='main__ingradient-gramm'>" + dishes[countInArray].ingradients[i].weight + "</p>");
-        $('.main__price').html(dishes[countInArray].price);
+        $('.main__price').html(dishes[countInArray].price + '$');
     }
 }
 setIngradients(0)
@@ -200,7 +215,6 @@ $('#main__btn-previous').click(function() {
         switcherClicks--
     }
 
-
     $('.main__plate-body').css('transform', 'rotate(' + switcherPos + 'deg');
     setFood();
 })
@@ -216,4 +230,14 @@ $('#main__btn-next').click(function() {
 
     $('.main__plate-body').css('transform', 'rotate(' + switcherPos + 'deg')
     setFood();
+})
+
+$('.main__card-btn.main__card-btn-cart').click(function() {
+    cart.push(dishes[switcherClicks - 1].name);
+    sum += dishes[switcherClicks - 1].price;
+    $('.header__my-cart-btn').html(cart.length);
+    $('.header__my-cart-btn').css('animation', 'move 0.6s 1');
+    setTimeout(() => {
+        $('.header__my-cart-btn').css('animation', 'none');
+    }, 600);
 })

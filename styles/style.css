@@ -16,21 +16,20 @@ body {
     --bg-dark: #1a1a1a;
     --color-of-the-text: #ffffff;
     /* sizes  */
-    --padding-of-the-page: calc(10px + 3vw);
+    --padding-of-the-page: calc(10px + 2vw);
     --nav-gap: calc(10px + 1vw);
-    --logo-fz: calc(20px + 1vw);
-    --normal-fz: calc(13px + 1vw);
-    --minif-fz: calc(10px + 1vw);
+    --logo-fz: calc(20px + 0.5vw + 0.5vh);
+    --normal-fz: calc(13px + 0.5vw + 0.5vh);
+    --minif-fz: calc(10px + 0.5vw + 0.5vh);
     --cart-height: calc(var(--normal-fz) * 1.5);
     --logo-height: calc((20px + 1vw) * 2.5);
-    --headlines-fz: calc(30px + 1vw);
+    --headlines-fz: calc(30px + 0.5vw + 0.5vh);
 }
 
 .wrapper {
     width: 100%;
     min-height: 100vh;
     background: var(--bg-dark);
-    padding: var(--padding-of-the-page);
     color: var(--color-of-the-text);
 }
 
@@ -81,16 +80,40 @@ body {
 }
 
 
+/* keyframes  */
+
+@keyframes move {
+    0% {
+        position: relative;
+        top: 0;
+    }
+    50% {
+        position: relative;
+        top: -10px;
+    }
+    100% {
+        position: relative;
+        top: 0;
+    }
+}
+
+
 /* header styles */
 
 .header {
-    height: 10vh;
+    height: 12vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--padding-of-the-page);
     user-select: none;
+    background: #1a1a1a;
+    z-index: 20;
+    position: relative;
+    padding: var(--padding-of-the-page);
+    padding-bottom: 5px;
+    box-shadow: 0 0 20px #1a1a1a;
 }
 
 .header__nav {
@@ -147,6 +170,19 @@ body {
     height: var(--logo-height);
 }
 
+.header__my-cart-btn {
+    height: var(--cart-height);
+    width: var(--cart-height);
+    background: url("/header/header__cart.svg") center center no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 5px;
+    font-weight: 100;
+}
+
 .header__my-cart-btn,
 .header__menu-btn {
     height: var(--cart-height);
@@ -162,25 +198,26 @@ body {
 
 .main {
     width: 100%;
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: var(--padding-of-the-page);
-    padding-bottom: var(--padding-of-the-page);
+    padding: var(--padding-of-the-page);
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .main__left,
 .main__right {
     width: 50%;
-    height: 100%;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .main__left {
-    height: 90vh;
+    height: 80vh;
     width: 40%;
     flex-direction: column;
     justify-content: flex-start;
@@ -196,7 +233,7 @@ body {
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    padding-top: var(--padding-of-the-page);
+    /* padding-top: var(--padding-of-the-page); */
     z-index: 10;
 }
 
@@ -213,6 +250,7 @@ body {
     border: 5px solid #F1592A;
     transform: rotate(30deg);
     transition: 0.4s;
+    z-index: 1s;
 }
 
 .main__switcher-group {
@@ -221,12 +259,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    position: relative;
-    top: 20px;
 }
 
 .main__plates {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,7 +369,7 @@ body {
     justify-content: center;
     column-gap: 5px;
     margin-left: -180px;
-    font-size: var(--normal-fz);
+    font-size: var(--headlines-fz);
     overflow: hidden;
 }
 
@@ -474,6 +510,7 @@ body {
 .main__card-btn:active {
     box-shadow: inset 0 0 5px #525252a1;
     transition: 0.2s;
+    background: #9b391b;
 }
 
 
@@ -484,25 +521,87 @@ body {
 
 @media screen and (min-width: 1100px) {
     .main__plate-body {
-        width: 500px;
-        height: 500px;
+        /* width: 500px; */
+        /* height: 500px; */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         border-radius: 50%;
         position: relative;
-        left: calc(-250px - var(--padding-of-the-page));
+        /* left: calc(-250px - var(--padding-of-the-page)); */
         border: 5px solid #F1592A;
         transform: rotate(30deg);
     }
     .main__name-of-dishes {
-        margin-left: -220px;
+        /* margin-left: -220px; */
     }
 }
 
 
 /* max  */
+
+@media screen and (max-height: 800px) {
+    .main__card-ingradients {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .wrapper {
+        overflow-x: hidden;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .main__left {
+        height: 40vh;
+    }
+    .main__right {
+        height: 40vh;
+    }
+    .main__left,
+    .main__right {
+        width: 100%;
+    }
+    .main__plate-body {
+        left: 0;
+        top: calc(-200px - var(--padding-of-the-page));
+        z-index: 0;
+        transform: rotate(120deg);
+    }
+    .main__name-of-dishes {
+        margin: 0;
+        writing-mode: horizontal-tb;
+        font-size: 30px;
+        margin-top: -400px;
+    }
+    .main__switcher-group {
+        flex-direction: column;
+        height: 100%;
+    }
+    .main__headline {
+        display: none;
+    }
+    .main__card {
+        padding: 10px 30px;
+        width: 100%;
+    }
+    .main__card-ingradients {
+        outline-offset: 5px;
+    }
+    .main__plate1 {
+        background: url('/main/main__plate/brocolli-salad.png') #ffffff no-repeat center center;
+        background-size: contain;
+        transform: rotate(0);
+    }
+    .main__plate2 {
+        background: url('/main/main__plate/sushi.png') #ffffff no-repeat center center;
+        background-size: 95%;
+        outline: none;
+        transform: rotate(90deg);
+    }
+}
 
 @media screen and (max-width: 600px) {
     .header__nav {

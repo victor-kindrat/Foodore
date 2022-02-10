@@ -1,27 +1,6 @@
-<svg width="51" height="49" viewBox="0 0 51 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_di_16_137)">
-<path d="M12.25 10.3333H40.9792C41.5613 10.3334 42.137 10.4554 42.669 10.6915C43.2011 10.9276 43.6778 11.2726 44.0684 11.7042C44.459 12.1358 44.7549 12.6445 44.9369 13.1975C45.1188 13.7504 45.1829 14.3354 45.125 14.9146L43.875 27.4146C43.7722 28.4427 43.291 29.396 42.5249 30.0893C41.7588 30.7827 40.7624 31.1666 39.7292 31.1667H19.8333C18.8697 31.1671 17.9358 30.8334 17.1905 30.2226C16.4452 29.6118 15.9347 28.7616 15.7458 27.8167L12.25 10.3333Z" stroke="white" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M12.25 10.3333L10.5625 3.57708C10.4496 3.12657 10.1895 2.72668 9.82335 2.44095C9.45721 2.15521 9.0061 2.00001 8.54167 2H6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.5 39.5H22.6667" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M35.1667 39.5H39.3334" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M30.2589 20.744C30.2589 19.7173 30.0909 18.9613 29.7549 18.476C29.4282 17.9813 29.0082 17.734 28.4949 17.734C27.9816 17.734 27.5616 17.9813 27.2349 18.476C26.9082 18.9707 26.7449 19.7267 26.7449 20.744C26.7449 21.7427 26.8942 22.4987 27.1929 23.012C27.5009 23.516 27.9349 23.768 28.4949 23.768C29.0549 23.768 29.4889 23.516 29.7969 23.012C30.1049 22.4987 30.2589 21.7427 30.2589 20.744ZM28.4949 25.21C27.9722 25.21 27.4916 25.1167 27.0529 24.93C26.6236 24.7433 26.2502 24.468 25.9329 24.104C25.6249 23.7307 25.3822 23.264 25.2049 22.704C25.0369 22.144 24.9529 21.4907 24.9529 20.744C24.9529 19.988 25.0462 19.33 25.2329 18.77C25.4196 18.21 25.6716 17.748 25.9889 17.384C26.3062 17.0107 26.6796 16.7353 27.1089 16.558C27.5382 16.3807 28.0002 16.292 28.4949 16.292C28.9896 16.292 29.4516 16.3853 29.8809 16.572C30.3102 16.7493 30.6836 17.02 31.0009 17.384C31.3276 17.748 31.5842 18.21 31.7709 18.77C31.9576 19.33 32.0509 19.988 32.0509 20.744C32.0509 21.4907 31.9622 22.144 31.7849 22.704C31.6169 23.2547 31.3742 23.7167 31.0569 24.09C30.7396 24.4633 30.3616 24.7433 29.9229 24.93C29.4936 25.1167 29.0176 25.21 28.4949 25.21Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_di_16_137" x="0.75" y="-0.25" width="49.6457" height="49" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_16_137"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_16_137" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="1" dy="-1"/>
-<feGaussianBlur stdDeviation="0.5"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="shape" result="effect2_innerShadow_16_137"/>
-</filter>
-</defs>
+<svg width="43" height="41" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.25 10.3333H36.9792C37.5613 10.3334 38.137 10.4554 38.669 10.6915C39.2011 10.9276 39.6778 11.2726 40.0684 11.7042C40.459 12.1358 40.7549 12.6445 40.9369 13.1975C41.1188 13.7504 41.1829 14.3354 41.125 14.9146L39.875 27.4146C39.7722 28.4427 39.291 29.396 38.5249 30.0893C37.7588 30.7827 36.7624 31.1666 35.7292 31.1667H15.8333C14.8697 31.1671 13.9358 30.8334 13.1905 30.2226C12.4452 29.6118 11.9347 28.7616 11.7458 27.8167L8.25 10.3333Z" stroke="white" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M8.25 10.3333L6.5625 3.57708C6.44964 3.12657 6.18948 2.72668 5.82335 2.44095C5.45721 2.15521 5.0061 2.00001 4.54167 2H2" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.5 39.5H18.6667" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.1667 39.5H35.3334" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
