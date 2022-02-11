@@ -533,9 +533,9 @@ body {
         border: 5px solid #F1592A;
         transform: rotate(30deg);
     }
-    .main__name-of-dishes {
-        /* margin-left: -220px; */
-    }
+    /* .main__name-of-dishes {
+        margin-left: -220px;
+    } */
 }
 
 
