@@ -1,0 +1,33 @@
+button.btn.btn-success.main__btn_orange#main__btn {
+    background: #F1592A;
+    border: none;
+    outline-color: #F1592A;
+}
+
+button.btn.btn-success.main__btn_orange#main__btn:focus,
+button.btn.btn-success.main__btn_orange#main__btn:active,
+button.btn.btn-success.main__btn_orange#main__btn:target {
+    box-shadow: 0 0 0 5px #f1582a42;
+}
+
+input.form-control.form-input:active,
+input.form-control.form-input:focus {
+    box-shadow: 0 0 0 5px #f1582a42;
+}
+
+.main {
+    padding: 20px;
+}
+
+.list-group-item.bg-dark.text-white.border-light.main__goods:hover {
+    border-left: 3px solid #ffffff;
+    transition: 0.3s;
+}
+
+a.card-link.text-warning.main__my-link {
+    width: 100%;
+    display: flex;
+    column-gap: 3px;
+    align-items: center;
+    justify-content: flex-start;
+}

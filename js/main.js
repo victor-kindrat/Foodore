@@ -284,5 +284,4 @@ $('#menu-phone').click(function() {
         }, 100);
         menuTrigger = false;
     }
-    console.log(menuTrigger)
 })

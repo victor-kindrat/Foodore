@@ -11,6 +11,11 @@ body {
     background: var(--bg-dark);
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 :root {
     /* colors  */
     --bg-dark: #1a1a1a;
@@ -53,7 +58,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #b84522;
+    background-color: #aa4020;
 }
 
 
