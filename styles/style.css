@@ -97,6 +97,30 @@ body {
     }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(365deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-back {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-365deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
 
 /* header styles */
 
@@ -136,6 +160,10 @@ body {
     gap: var(--nav-gap);
     text-transform: lowercase;
     font-weight: 600;
+}
+
+.header__menu-text {
+    display: flex;
 }
 
 .header__nav-icons {
@@ -191,6 +219,7 @@ body {
 
 .header__menu-btn {
     display: none;
+    transition: 0.2s;
 }
 
 
@@ -610,7 +639,7 @@ body {
     .header__menu-full {
         justify-content: flex-end;
     }
-    .header__nav-item {
+    .header__menu-text {
         display: none;
     }
     .header__menu-btn {
