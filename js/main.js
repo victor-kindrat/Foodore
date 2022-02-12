@@ -16,6 +16,7 @@ let setSwitcherPos = () => {
 }
 setSwitcherPos();
 
+$('.main-pay').attr('class', 'd-none');
 let sum = 0;
 let cart = [];
 
@@ -284,4 +285,35 @@ $('#menu-phone').click(function() {
         }, 100);
         menuTrigger = false;
     }
+})
+
+$('.header__my-cart-btn').click(() => {
+    if (cart.length === 0) {
+        alert('❓ ERROR! \n' + 'Choose dishes and try again')
+    } else {
+        $('#main-pay').attr('class', 'main-pay container-fluid d-flex flex-column flex-md-row col col-12 justify-content-around align-items-center');
+        $('#main').css('display', 'none');
+        $('.list-group.list-group-flush.border-light').html('');
+        let repeats = 0;
+        let position = 0;
+        for (let i = 0; i != cart.length; i++) {
+            if (cart[i] === cart[i - 1]) {
+                repeats++
+                console.log(repeats)
+                if (cart[i] != cart[i + 1]) {
+                    repeats++;
+                    $('#list-item' + position).html($('#list-item' + position).html() + ' x' + repeats)
+                }
+            } else {
+                repeats = 0;
+                position = i;
+                $('.list-group.list-group-flush.border-light').append("<li id='list-item" + i + "' class='list-group-item bg-dark text-white border-light main__goods'>" + cart[i] + "</li>")
+            }
+        }
+    }
+})
+
+$('.dishes').click(function() {
+    $('#main-pay').attr('class', 'd-none');
+    $('#main').css('display', 'flex');
 })

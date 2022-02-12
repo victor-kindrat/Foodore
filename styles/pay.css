@@ -20,7 +20,7 @@ input.form-control.form-input:focus {
 }
 
 .list-group-item.bg-dark.text-white.border-light.main__goods:hover {
-    border-left: 3px solid #ffffff;
+    border-left: 5px solid rgb(204, 25, 25);
     transition: 0.3s;
 }
 
@@ -30,4 +30,14 @@ a.card-link.text-warning.main__my-link {
     column-gap: 3px;
     align-items: center;
     justify-content: flex-start;
+}
+
+a.clear-anhor {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.clear-anhor:hover {
+    color: #F1592A;
+    text-decoration: none;
 }
