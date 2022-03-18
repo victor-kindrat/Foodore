@@ -307,7 +307,7 @@ $('.header__my-cart-btn').click(() => {
             } else {
                 repeats = 0;
                 position = i;
-                $('.list-group.list-group-flush.border-light').append("<li id='list-item" + i + "' class='list-group-item bg-dark text-white border-light main__goods'>" + cart[i] + "</li>")
+                $('.list-group.list-group-flush.border-light').append("<li id='list-item" + i + "' class='list-group-item bg-transparent text-white border-light main__goods'>" + cart[i] + "</li>")
             }
         }
     }

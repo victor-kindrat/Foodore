@@ -19,17 +19,20 @@ input.form-control.form-input:focus {
     padding: 20px;
 }
 
-.list-group-item.bg-dark.text-white.border-light.main__goods:hover {
+.list-group-item.bg-transparent.text-white.border-light.main__goods:hover {
     border-left: 5px solid rgb(204, 25, 25);
     transition: 0.3s;
 }
 
-a.card-link.text-warning.main__my-link {
+a.card-link.main__my-link.d-inline-flex.link {
     width: 100%;
     display: flex;
     column-gap: 3px;
     align-items: center;
     justify-content: flex-start;
+    color: #F1592A;
+    text-decoration-color: #F1592A;
+    -moz-text-decoration-color: #F1592A;
 }
 
 a.clear-anhor {
@@ -40,4 +43,26 @@ a.clear-anhor {
 a.clear-anhor:hover {
     color: #F1592A;
     text-decoration: none;
+}
+
+.my-btn.btn.btn-warning.text-white {
+    background-color: #F1592A;
+    border: none;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.img-icon {
+    height: 30px;
+}
+
+.my-btn.btn.btn-warning.text-white:active,
+.my-btn.btn.btn-warning.text-white:focus {
+    box-shadow: 0 0 0 5px #f1582a42;
+}
+
+.card.col-12.col-md-2.rounded-3.bg-dark {
+    box-shadow: inset 0 0 5px #ffffff10;
 }
