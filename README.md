@@ -18,7 +18,7 @@ JS project. Make an order by spinning a plate.
 
 #### You can look preview here:
 
-![preview](https://files.fm/thumb_show.php?i=bx2hjfucz"preview")
+![preview](https://files.fm/thumb_show.php?i=bx2hjfucz "preview")
 
 ---
 [Open](https://foodore-switcher.netlify.app/)
