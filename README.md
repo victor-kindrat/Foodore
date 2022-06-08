@@ -1,4 +1,4 @@
-# Foodore - food swtcher 😋
+# Foodore - food switcher 😋
 JS. Custom plate switcher
 ---
 
